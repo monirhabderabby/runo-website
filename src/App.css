@@ -1,3 +1,8 @@
+body{
+    scroll-behavior: smooth;
+    -ms-scroll-limit-x-max: hidden;
+}
+
 /* Font Size */
 
 .f4xl{
@@ -8,4 +13,10 @@
 /* Font Style */
 .lora{
     font-family: 'Lora', serif;
+}
+
+.badge{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 6px 10px;
 }

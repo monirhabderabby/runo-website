@@ -10,4 +10,5 @@ In the project directory, you can run:
 * Tailwind
 * Flowbite
 * AOS Animation
+* React Query
 
