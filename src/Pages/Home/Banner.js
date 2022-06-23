@@ -15,11 +15,12 @@ const Banner = () => {
                     <div>
                         <span className="text-white rounded-md customBadge">ADVENTURE</span>
                     </div>
-                    <div>
+                    <div data-aos-duration='1000' data-aos="fade">
                         <span className=" title text-white">Richird Norton photorealistic rendering as real photos</span>
                     </div>
-                    {/* post note */}
-                    <div className="text-gray-200 comment flex">
+                    <div className="text-gray-200 comment flex"
+                    data-aos="fade-in" data-aos-delay="400" data-aos-duration='1000'
+                    >
                         <span className="pr-8">Date</span>
                         <p>Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
                     </div>
