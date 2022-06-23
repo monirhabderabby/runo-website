@@ -23,10 +23,11 @@ const RunoNavbar = () => {
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <NavLink
-                        to="/home"
+                        to="/"
                         className={({ isActive }) =>
                             isActive ? "text-blue-500" : "text-white"
                         }
+                        end
                     >
                         Home
                     </NavLink>
