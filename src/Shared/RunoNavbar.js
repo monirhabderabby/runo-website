@@ -25,7 +25,7 @@ const RunoNavbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive ? "text-blue-500" : "text-white"
+                            isActive ? "text-blue-500 " : "text-white"
                         }
                         end
                     >
@@ -34,7 +34,7 @@ const RunoNavbar = () => {
                     <NavLink
                         to="/about"
                         className={({ isActive }) =>
-                            isActive ? "text-blue-500" : "text-white"
+                            isActive ? "text-blue-500 " : "text-white"
                         }
                     >
                         About
@@ -42,15 +42,15 @@ const RunoNavbar = () => {
                     <NavLink
                         to="/articles"
                         className={({ isActive }) =>
-                            isActive ? "text-blue-500" : "text-white"
+                            isActive ? "text-blue-500 " : "text-white"
                         }
                     >
                         Articles
                     </NavLink>
                     <NavLink
-                        to="/contactus"
+                        to="/contact"
                         className={({ isActive }) =>
-                            isActive ? "text-blue-500" : "text-white"
+                            isActive ? "text-blue-500 " : "text-white"
                         }
                     >
                         Contact Us
