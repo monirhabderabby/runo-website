@@ -5,7 +5,7 @@ import videoBG from '../../Assets/Videos/drone.mp4'
 
 const Banner = () => {
     return (
-        <div className="bg-img">
+        <div className="bg-img lora">
             <div className="overlay"></div>
             <video src={videoBG} autoPlay loop muted></video>
             <div className="content">
@@ -21,7 +21,7 @@ const Banner = () => {
                     <div className="text-gray-200 comment flex"
                     data-aos="fade-in" data-aos-delay="400" data-aos-duration='1000'
                     >
-                        <span className="pr-8">Date</span>
+                        <span className="pr-4">Date</span>
                         <p>Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
                     </div>
                 </div>

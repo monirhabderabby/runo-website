@@ -1,0 +1,11 @@
+/* Font Size */
+
+.f4xl{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+/* Font Style */
+.lora{
+    font-family: 'Lora', serif;
+}
