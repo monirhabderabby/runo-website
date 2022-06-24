@@ -14,7 +14,7 @@ const EditorsPick = () => {
             <h1 className="text-2xl lg:mt-[75px] lg:mb-[25px] md:ml-16 lora">Editor's Pick</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             {
-                data.map(blog=> <BlogChoiceCard key={"blog._id"} blog={blog}  />)
+                data.slice(0,3).map(blog=> <BlogChoiceCard key={"blog._id"} blog={blog}  />)
             }
             </div>
         </div>
