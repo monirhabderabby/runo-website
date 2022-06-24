@@ -1,5 +1,5 @@
-
 import React from 'react';
+import Footer from '../../Shared/Footer';
 import Banner from './Banner';
 import EditorsPick from './EditorsPick/EditorsPack';
 import PopulerTopics from './Populer topics/PopulerTopics';
@@ -12,6 +12,7 @@ const Home = () => {
             <PopulerTopics />
             <Quotes />
             <EditorsPick />
+            <Footer />
         </div>
     );
 };
