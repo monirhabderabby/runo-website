@@ -4,7 +4,7 @@ import BlogChoiceCard from '../../../Shared/BlogChoiceCard';
 import Loading from '../../../Shared/Loading';
 
 const EditorsPick = () => {
-    const {data, isLoading} = useQuery("allBlogs", ()=> fetch("http://localhost:5000/blogs").then(res=> res.json()))
+    const {data, isLoading} = useQuery("allBlogs", ()=> fetch("https://secret-lake-48299.herokuapp.com/blogs").then(res=> res.json()))
 
     if(isLoading){
         return <Loading />

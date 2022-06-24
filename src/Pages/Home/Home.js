@@ -13,6 +13,7 @@ const Home = () => {
             <Quotes />
             <EditorsPick />
             <Footer />
+            
         </div>
     );
 };

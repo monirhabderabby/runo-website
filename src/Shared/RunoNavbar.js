@@ -8,7 +8,7 @@ const RunoNavbar = () => {
             <Navbar
                 fluid={true}
                 rounded={true}
-                className="bg-transparent text-gray"
+                className="bg-transparent text-gray ml-6 mr-6"
             >
                 <Navbar.Brand href="/">
                     <img
@@ -16,7 +16,7 @@ const RunoNavbar = () => {
                         className="mr-3 h-6 sm:h-9"
                         alt="Flowbite Logo"
                     />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold ">
+                    <span className="self-center whitespace-nowrap text-2xl text-white font-semibold">
                         Runo
                     </span>
                 </Navbar.Brand>

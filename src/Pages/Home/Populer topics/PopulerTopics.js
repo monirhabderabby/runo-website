@@ -9,8 +9,8 @@ import Travel from "./Travel";
 const PopulerTopics = () => {
     return (
         <div className="px-4 md:px-8 lg:px-12 mt-12">
-            <h1 className="text-2xl lg:mt-[75px] lg:mb-[25px] md:ml-6 lg:ml-16 lora">Populer Topics</h1>
-            <section className="flex justify-center">
+            <h1 className="text-2xl lg:mt-[75px] lg:mb-[25px]lora">Populer Topics</h1>
+            <section className="">
                 <Tabs.Group aria-label="Tabs with underline" style="underline">
                     <Tabs.Item active={true} title="All">
                         <All />
