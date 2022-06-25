@@ -15,7 +15,7 @@ const BlogCard = ({ blog }) => {
                 <p className="font-semibold">{blog.title}</p>
                 <p className="my-3">
                     {blog.post.slice(0, 120)}...
-                    <Link to={`/articledetails/${blog._id}`} className="text-blue-600 font-bold">
+                    <Link to={`/articledetails/${blog?._id}`} className="text-blue-600 font-bold">
                         Read more
                     </Link>
                 </p>

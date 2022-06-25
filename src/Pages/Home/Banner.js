@@ -1,7 +1,7 @@
 import React from "react";
 import RunoNavbar from "../../Shared/RunoNavbar";
 import "../Home/Css/Banner.css";
-import videoBG from '../../Assets/Videos/drone.mp4'
+import videoBG from '../../Assets/Videos/Couple Walking on a Beach Filmed with a Drone.mp4'
 
 const Banner = () => {
     return (

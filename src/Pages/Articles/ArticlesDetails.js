@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import Loading from '../../Shared/Loading';
+import RunoNavbar from '../../Shared/RunoNavbar';
 
 const ArticlesDetails = () => {
     const {id} = useParams();
@@ -10,12 +11,36 @@ const ArticlesDetails = () => {
         if(isLoading){
             return <Loading />
         }
-    
+        if(data){
+            console.log(data);
+        }
     return (
         <div>
-            {
-                data?.message
-            }
+            <div style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${data?.img})`,
+            height: "50vh",
+            width: "100%",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}>
+            <RunoNavbar />  
+
+            <div className='flex justify-center w-1/2 mx-auto h-full flex-col '>
+            <h1 className='text-white  text-[36px] text-center mx-auto lora'>{data?.title}</h1>
+            <span className='text-white text-[12px] ml-6 mt-4 text-left'>By {data?.writter}</span>
+            </div>
+            
+
+        </div>
+
+        <section className='w-1/2 flex mx-auto mt-20'>
+            <div className='text-[12px]'>
+                <p className='mr-4 md:mr-8 lg:mr-24 w-full'>{data?.post_date}</p>
+                <p>{data?.writter}</p>
+            </div>
+            <p className='ml-8 text-[14px] tracking-wider'>{data?.post}</p>
+        </section>
+
         </div>
     );
 };
