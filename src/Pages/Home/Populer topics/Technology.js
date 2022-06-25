@@ -5,7 +5,7 @@ import Loading from '../../../Shared/Loading';
 
 const Technology = () => {
     const type = "Technology"
-    const {data,isLoading} = useQuery('technology', ()=> fetch(`https://secret-lake-48299.herokuapp.com/blog/${type}`).then(res=> res.json()))
+    const {data,isLoading} = useQuery('technology', ()=> fetch(`https://secret-lake-48299.herokuapp.com/blogs/${type}`).then(res=> res.json()))
 
     if(isLoading){
         return <Loading />
