@@ -1,0 +1,37 @@
+[debug] [2022-07-04T17:29:40.498Z] ----------------------------------------------------------------------
+[debug] [2022-07-04T17:29:40.500Z] Command:       /usr/local/bin/node /Users/saidurrahman/.npm-global/bin/firebase deploy
+[debug] [2022-07-04T17:29:40.501Z] CLI Version:   11.1.0
+[debug] [2022-07-04T17:29:40.501Z] Platform:      darwin
+[debug] [2022-07-04T17:29:40.501Z] Node Version:  v16.13.1
+[debug] [2022-07-04T17:29:40.507Z] Time:          Mon Jul 04 2022 23:29:40 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-07-04T17:29:40.507Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-04T17:29:40.517Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-07-04T17:29:40.595Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-04T17:29:40.595Z] > authorizing via signed-in user (monirhrabby.personal@gmail.com)
+[debug] [2022-07-04T17:29:40.596Z] [iam] checking project travelwithruno for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-04T17:29:40.596Z] > refreshing access token with scopes: []
+[debug] [2022-07-04T17:29:40.597Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-04T17:29:40.597Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-04T17:29:41.818Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-07-04T17:29:41.818Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-07-04T17:29:43.701Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-04T17:29:43.701Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-04T17:29:43.724Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/travelwithruno:testIamPermissions [none]
+[debug] [2022-07-04T17:29:43.725Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/travelwithruno:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-04T17:29:45.370Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/travelwithruno:testIamPermissions 200
+[debug] [2022-07-04T17:29:45.370Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/travelwithruno:testIamPermissions {}
+[debug] [2022-07-04T17:29:45.370Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project travelwithruno:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-04T17:29:45.372Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/travelwithruno [none]
+[debug] [2022-07-04T17:29:46.428Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/travelwithruno 403
+[debug] [2022-07-04T17:29:46.428Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/travelwithruno {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-04T17:29:46.429Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-04T17:29:46.753Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/saidurrahman/.npm-global/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/saidurrahman/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project travelwithruno. Please make sure the project exists and your account has permission to access it.

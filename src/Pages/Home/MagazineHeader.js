@@ -5,12 +5,15 @@ const MagazineHeader = () => {
         <section className="w-[100%] h-full px-4 md:px-8 lg:px-12">
             <div className="block lg:flex lg:justify-center ">
                 <div className="flex-1">
-                    <div className="p-6 shadow-2xl bg-white h-full lg:h-[500px] w-fit mx-auto relative top-[-10%]">
+                    <div className="p-6 shadow-2xl bg-white h-full lg:h-[500px] w-fit mx-auto relative top-[-10%] overflow-hidden">
                         <img
                             src={travel}
                             alt="travel img"
-                            className="h-full "
+                            className="h-full hover:scale-[120%] duration-300"
                         />
+                        <p className="absolute left-[12%] text-xl text-white top-[60%] tracking-wider">
+                            2020
+                        </p>
                     </div>
                 </div>
 
