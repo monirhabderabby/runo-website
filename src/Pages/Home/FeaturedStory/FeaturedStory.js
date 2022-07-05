@@ -1,13 +1,22 @@
-import { BookOutlined, HeartFilled, HeartOutlined } from "@ant-design/icons";
+import {
+    BookOutlined,
+    HeartFilled,
+    HeartOutlined,
+    SettingOutlined,
+} from "@ant-design/icons";
 import { Card } from "flowbite-react";
 import { useState } from "react";
 import elephent from "../../../Assets/Images/elephent.jpg";
 const FeaturedStory = () => {
     const [isLiked, setLiked] = useState(false);
+    const [isAdmin, setAdmin] = useState(true);
     return (
         <div>
-            <div className="w-fit mx-auto">
+            <div className="w-fit mx-auto relative">
                 <Card horizontal={true} imgSrc={elephent}>
+                    {isAdmin && (
+                        <SettingOutlined className="absolute top-2 right-2" />
+                    )}
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Keepers of Ganesh: The Vanish Art of Mahout
                     </h5>
@@ -28,7 +37,8 @@ const FeaturedStory = () => {
                             )}
                         </div>
                         <div>
-                            <BookOutlined className="text-2xl mx-2" />
+                            <BookOutlined className="text-2xl mx-2" />{" "}
+                            <span>17 min ago</span>
                         </div>
                     </div>
                     <div className="flex">
