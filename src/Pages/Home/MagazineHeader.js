@@ -5,7 +5,7 @@ const MagazineHeader = () => {
         <section className="w-[100%] h-full px-4 md:px-8 lg:px-12">
             <div className="block md:flex md:justify-center ">
                 <div className="flex-1">
-                    <div className="p-6 shadow-2xl bg-white h-full lg:h-[500px] w-fit mx-auto relative top-[-10%] overflow-hidden">
+                    <div className="p-6 md:shadow-2xl bg-white h-full lg:h-[500px] w-fit mx-auto relative top-[-10%] overflow-hidden">
                         <img
                             src={travel}
                             alt="travel img"
