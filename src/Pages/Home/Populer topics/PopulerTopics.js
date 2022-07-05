@@ -1,5 +1,4 @@
 import { Tabs } from "flowbite-react";
-import React from "react";
 import Adventure from "./Adventure";
 import All from "./All";
 import Branding from "./Branding";
@@ -9,7 +8,12 @@ import Travel from "./Travel";
 const PopulerTopics = () => {
     return (
         <div className="px-4 md:px-8 lg:px-12 mt-12">
-            <h1 className="text-2xl lg:mt-[75px] lg:mb-[25px]lora">Populer Topics</h1>
+            <h1
+                className="text-2xl lg:mt-[75px] lg:mb-[25px]lora"
+                id="articles"
+            >
+                Populer Topics
+            </h1>
             <section className="">
                 <Tabs.Group aria-label="Tabs with underline" style="underline">
                     <Tabs.Item active={true} title="All">

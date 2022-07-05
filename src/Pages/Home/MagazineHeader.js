@@ -1,3 +1,5 @@
+import { Divider } from "antd";
+import "antd/dist/antd.css";
 import travel from "../../Assets/Images/travel.jpg";
 
 const MagazineHeader = () => {
@@ -13,7 +15,9 @@ const MagazineHeader = () => {
                         />
                     </div>
                 </div>
-
+                <div className="hidden md:block">
+                    <Divider type="vertical" style={{ height: "500px" }} />
+                </div>
                 <div className="flex-1 px-2 lg:px-20 my-8">
                     <h1 className="font-semibold my-7">
                         Our latest magazine edition

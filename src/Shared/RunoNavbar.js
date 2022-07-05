@@ -1,5 +1,4 @@
 import { Navbar } from "flowbite-react";
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const RunoNavbar = () => {
@@ -25,7 +24,9 @@ const RunoNavbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive ? "text-blue-500" : "text-white hover:text-blue-500 transition-colors .5s"
+                            isActive
+                                ? "text-blue-500"
+                                : "text-white hover:text-blue-500 transition-colors .5s"
                         }
                         end
                     >

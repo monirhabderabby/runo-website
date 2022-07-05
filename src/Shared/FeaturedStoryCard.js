@@ -28,7 +28,7 @@ const FeaturedStoryCard = ({ isAdmin, isLiked, setLiked, elephent }) => {
                         ) : (
                             <HeartOutlined
                                 onClick={() => setLiked(!isLiked)}
-                                className="text-2xl"
+                                className="text-2xl hover:text-gray-900"
                             />
                         )}
                     </div>
